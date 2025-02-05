@@ -50,6 +50,7 @@ Attention:
 * [AWS Official Doc - Create Bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mb.html#examples)
 
 * Le bucket existe-t-il ?
+  oui 
 
 ```bash
 aws s3 ls --profile devopsteam99-i346 | grep "devopsteam*"
@@ -91,7 +92,8 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+$ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+
 ```
 
 ```
