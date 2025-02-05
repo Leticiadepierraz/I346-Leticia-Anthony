@@ -121,18 +121,19 @@ $ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
+
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+aws ecr create-repository --repository-name project-a/nginx-web-app
 ```
 
 ```
