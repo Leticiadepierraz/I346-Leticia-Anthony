@@ -280,7 +280,7 @@ upload: /home/utilisateur/mon_repertoire/dossier1/fichier3.png to s3://mon-bucke
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//aws s3 cp C:/Users/pb25tik/Desktop/ICT-346_cloud/ s3://devopsteam06-i346 --recursive --profile devopsteam06-i346
+//aws s3 cp C:/Users/pt57itt/Desktop/ICT-346_cloud/ s3://devopsteam06-i346 --recursive --profile devopsteam06-i346
 ```
 
 ```
