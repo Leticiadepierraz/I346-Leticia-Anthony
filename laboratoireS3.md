@@ -350,16 +350,28 @@ Consigne : répondre en utilisant des sources officielles et en vous appuyant de
 
 ### Pourquoi est-il déconseillé de détruire un bucket S3 selon AWS ?
 
-* [Sources AWS]
+* [Sources AWS : https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html]
+ 
 
-[Votre réponse]
+[Car si on a des données lier a des applications ca peut les endommager et perdre toutes les donées]
 
 ### Quelle est la différence entre un Bucket S3 et Glacier ?
 
-* [Sources AWS]
+* [Sources AWS : https://managedserver.fr/aws-s3-e-aws-glacier-quali-sono-le-differenze/ ]
 
-[Votre réponse]
+[Un bucket S3 est conçu pour le stockage de données fréquemment accessibles avec une latence faible, tandis que Glacier est destiné à l'archivage de données à long terme, offrant un stockage moins coûteux mais avec des délais de récupération plus longs.]
 
 ### Reprenez l'IAM "Policy" et expliquer ce que vous pouvez en déduire au niveau des droits qui vous sont alloués
 
 Consigne : Reprenez la "policy" et documenter chaque ligne
+
+Vesrion : ca nous donne la version.
+Statement: on initiale une condition avec un tableau.
+Effect : ça autorise les paramtères que on a le droit de faire.
+Action : Autorise l'utilisateur à voir tous les buckets S3 qu'il possède.
+Ressource : c'est la règle qui s'applique au objet S3
+
+Effect : ça autorise les paramtères que on a le droit de faire.
+Action : un tableau avec les droits que nous pouvons faire ( putobject, getobjetc, deleteobject)
+Ressource : 
+
