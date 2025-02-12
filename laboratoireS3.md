@@ -107,7 +107,8 @@ An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User:
 
 ```bash
 //TODO
-$ aws s3 cp C:/Users/pb25tik/Desktop/ICT-346_cloud/main.js s3://devopsteam06-i346 --profil devopsteam06
+$ aws s3 cp C:/Users/pb25tik/Desktop/ICT-346_cloud/main.js s3://devopsteam06-i346 \
+--profil devopsteam06
 ```
 
 ```
@@ -125,7 +126,8 @@ upload: .\main.js to s3://devopsteam06-i346/main.js
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 ```
 
 ```
@@ -137,7 +139,8 @@ An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User:
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-aws ecr create-repository --repository-name project-a/nginx-web-app
+aws cp create-repository \
+--repository-name/
 ```
 
 ```
@@ -154,7 +157,8 @@ aws ecr create-repository --repository-name project-a/nginx-web-app
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 //TODO
 ```
 
@@ -166,7 +170,8 @@ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-// aws s3 ls s3://devopsteam06-i346/ --recursive
+ aws s3 ls s3://devopsteam06-i346/ \
+--recursive
 ```
 
 ```
@@ -183,7 +188,8 @@ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 ```
 
 ```
@@ -194,7 +200,8 @@ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//aws s3 sync /home/utilisateur/mon_repertoire s3://devopsteam-ict346/ --profile devopsteam6
+//aws s3 sync /home/utilisateur/mon_repertoire s3://devopsteam-ict346/ \
+--profile devopsteam6
 ```
 
 ```
@@ -252,7 +259,8 @@ upload: /home/utilisateur/mon_repertoire/dossier1/fichier3.png to s3://mon-bucke
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//aws s3 rm s3://devopsteam06-i346/main.js --profile devopsteam06-i346
+aws s3 rm s3://devopsteam06-i346/main.js \
+--profile devopsteam06-i346
 ```
 
 ```
