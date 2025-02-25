@@ -384,7 +384,7 @@ upload: C:\Users\pb25tik\Desktop\ICT-346_cloud\I346-Leticia-Anthony\laboratoireS
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+// aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
