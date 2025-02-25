@@ -50,6 +50,8 @@ Attention:
 * [AWS Official Doc - Create Bucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mb.html#examples)
 
 * Le bucket existe-t-il ?
+  oui 
+
 
 ```bash
 aws s3 ls --profile devopsteam99-i346 | grep "devopsteam*"
@@ -91,23 +93,28 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+$ aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
+
 ```
 
 ```
 [OUTPUT]
 //TODO
-```
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
+```s
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
 //TODO
+$ aws s3 cp C:/Users/pb25tik/Desktop/ICT-346_cloud/main.js s3://devopsteam06-i346 \
+--profil devopsteam06
 ```
 
 ```
 [OUTPUT]
 //TODO
+upload: .\main.js to s3://devopsteam06-i346/main.js
 ```
 
 ### Uploader un répertoire
@@ -119,18 +126,21 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
+
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+aws cp create-repository \
+--repository-name/
 ```
 
 ```
@@ -147,23 +157,26 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 //TODO
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+ aws s3 ls s3://devopsteam06-i346/ \
+--recursive
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 ### Synchroniser un répertoire local de sa machine avec un bucket
@@ -175,23 +188,27 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+aws s3 ls s3://devopsteam06-i346 \
+--profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+//aws s3 sync /home/utilisateur/mon_repertoire s3://devopsteam-ict346/ \
+--profile devopsteam6
 ```
 
 ```
 [OUTPUT]
-//TODO
+//upload: /home/utilisateur/mon_repertoire/fichier1.txt to s3://mon-bucket/fichier1.txt
+upload: /home/utilisateur/mon_repertoire/fichier2.jpg to s3://mon-bucket/fichier2.jpg
+upload: /home/utilisateur/mon_repertoire/dossier1/fichier3.png to s3://mon-bucket/dossier1/fichier3.png
 ```
 
 ### Publier un fichier présent sur un bucket en générant un lien (url) temporaire
@@ -231,23 +248,24 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+//aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+aws s3 rm s3://devopsteam06-i346/main.js \
+--profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//delete: s3://devopsteam06-i346/main.js
 ```
 
 ### Vider un "repertoire"
@@ -259,23 +277,26 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+//aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
 
 ```bash
-//TODO
+//aws s3 cp C:/Users/pt57itt/Desktop/ICT-346_cloud/ s3://devopsteam06-i346 --recursive --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//[OUTPUT]
+//upload: C:\Users\pb25tik\Desktop\ICT-346_cloud\I346-Leticia-Anthony\.git\HEAD to s3://devopsteam06-i346/I346-Leticia-Anthony/.git/HEAD
+upload: C:\Users\pb25tik\Desktop\ICT-346_cloud\I346-Leticia-Anthony\.git\ORIG_HEAD to s3://devopsteam06-i346/I346-Leticia-Anthony/.git/ORIG_HEAD
+
 ```
 
 ### Extraire uniquement les metadonnées d'un objet
@@ -287,12 +308,12 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+//aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
@@ -315,12 +336,12 @@ make_bucket: devopsteam99-i346
 * [Vérifier l'état du bucket avant votre commande]
 
 ```bash
-//TODO
+//aws s3 ls s3://devopsteam06-i346 --profile devopsteam06-i346
 ```
 
 ```
 [OUTPUT]
-//TODO
+//An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:iam::709024702237:user/devopsteam06-i346 is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::devopsteam06-i346" because no identity-based policy allows the s3:ListBucket action
 ```
 
 * [La commande à réaliser pour effecuter l'action demandée]
@@ -342,16 +363,28 @@ Consigne : répondre en utilisant des sources officielles et en vous appuyant de
 
 ### Pourquoi est-il déconseillé de détruire un bucket S3 selon AWS ?
 
-* [Sources AWS]
+* [Sources AWS : https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html]
+ 
 
-[Votre réponse]
+[Car si on a des données lier a des applications ca peut les endommager et perdre toutes les donées]
 
 ### Quelle est la différence entre un Bucket S3 et Glacier ?
 
-* [Sources AWS]
+* [Sources AWS : https://managedserver.fr/aws-s3-e-aws-glacier-quali-sono-le-differenze/ ]
 
-[Votre réponse]
+[Un bucket S3 est conçu pour le stockage de données fréquemment accessibles avec une latence faible, tandis que Glacier est destiné à l'archivage de données à long terme, offrant un stockage moins coûteux mais avec des délais de récupération plus longs.]
 
 ### Reprenez l'IAM "Policy" et expliquer ce que vous pouvez en déduire au niveau des droits qui vous sont alloués
 
 Consigne : Reprenez la "policy" et documenter chaque ligne
+
+Vesrion : ca nous donne la version.
+Statement: on initiale une condition avec un tableau.
+Effect : ça autorise les paramtères que on a le droit de faire.
+Action : Autorise l'utilisateur à voir tous les buckets S3 qu'il possède.
+Ressource : c'est la règle qui s'applique au objet S3
+
+Effect : ça autorise les paramtères que on a le droit de faire.
+Action : un tableau avec les droits que nous pouvons faire ( putobject, getobjetc, deleteobject)
+Ressource : 
+
